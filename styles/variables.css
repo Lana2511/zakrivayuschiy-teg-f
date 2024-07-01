@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --background-color: #FFFFFF;
+    --accent-color: #000000;
+    --main-font-family: 'Inter';
+    --accent-font-family: 'PressStart2P-Regular';
+    --card-font-weight: 400;
+    --title-font-weight: 700;
+    --width: clamp(50%, (40rem - 100%) * 999, 696px);
+    --background-color-hover: #FFFFFF;
+    --heart-contour-color: #000000;
+    --heart-fill: #FF0000;
+}
