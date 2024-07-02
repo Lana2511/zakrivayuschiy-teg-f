@@ -3,6 +3,10 @@
 :root {
     --background-color: #FFFFFF;
     --accent-color: #000000;
+    --gradient: 
+        repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P-Regular';
     --card-font-weight: 400;

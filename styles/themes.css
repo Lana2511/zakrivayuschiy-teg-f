@@ -8,6 +8,10 @@
 :root.theme-light {
     --background-color: #FFFFFF;
     --accent-color: #000000;
+    --gradient: 
+        repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P-Regular';
     --card-font-weight: 400;
@@ -21,6 +25,10 @@
 :root.theme-dark {
     --background-color: #000000;
     --accent-color: #00CC14;
+    --gradient: 
+        repeating-linear-gradient(to right, #000 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+        linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P-Regular';
     --card-font-weight: 485;
@@ -32,16 +40,13 @@
 }
 
     .theme-dark .page{
-        min-inline-size: 320px;
-        min-block-size: 100dvb;
         font-family: var(--main-font-family), fantasy;
         font-variation-settings: 'wght' 485;
         background-color: var(--background-color);
         color: var(--accent-color);
-        background-attachment: fixed;
-        background-image: 
-            repeating-linear-gradient(to right, #000, transparent 2px),
-            repeating-linear-gradient(to bottom, #000, transparent 2px),
-            linear-gradient(to bottom, #007f0c, #004306);
-        background-size: cover;
+        background-image: var(--gradient);
     }   
+
+    .theme-dark .card-title {
+        font-variation-settings: 'wght' 785;
+    }

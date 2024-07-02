@@ -12,3 +12,97 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.like-icon:hover { 
+    transition-timing-function: linear;
+  }
+  
+  .sparks {
+    opacity: 0;
+    transition: fill 0.3s ease-in;
+  }
+  
+  .card__icon-button:hover .core {
+    fill: var(--accent-color);
+    transition: fill 0.3s;
+  }
+  
+  .card__icon-button:not(:hover) .core {
+    fill: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s 0.03s;
+  }
+  
+  .card__icon-button:hover .main-body {
+    fill: var(--accent-color);
+    transition: fill 0.3s 0.05s;
+  }
+  
+  .card__icon-button:not(:hover) .main-body {
+    fill: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card__icon-button:active .core {
+    fill: var(--heart-fill);
+    transition: fill 0.3s;
+  }
+  
+  .card__icon-button:active .main-body {
+    fill: var(--heart-fill);
+    transition: fill 0.3s 0.05s;
+  }
+  
+  .like-icon.is-liked {
+    animation-fill-mode: forwards;
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--heart-fill);
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--heart-fill);
+    transition: fill 0.3s 0.05s;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--heart-fill);
+    transition: fill 0.3s 0.06s;
+  }
+  
+  .like-icon.is-liked .heart {
+    animation: heart-scale ease-in 0.3s 0.1s 2 alternate;
+    transform-origin: center;
+    fill: var(--heart-fill);
+  }
+  
+  @keyframes heart-scale {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.5);
+    }
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation: sparks-fill ease-in 0.3s 0.3s 2 alternate;
+  }
+  
+  @keyframes sparks-fill {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .card__icon-button .contour {
+    fill: var(--accent-color);
+    transition: fill 0.1s;
+  }
