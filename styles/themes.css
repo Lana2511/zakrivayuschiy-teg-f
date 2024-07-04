@@ -9,14 +9,14 @@
     --background-color: #FFFFFF;
     --accent-color: #000000;
     --gradient: 
-        repeating-linear-gradient(to right, #d3d3d3 2px, transparent 4px),
-        repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+        repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
         linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P-Regular';
     --card-font-weight: 400;
     --title-font-weight: 700;
-    --width: clamp(50%, (40rem - 100%) * 999, 700px);
+    --width: clamp(23.188rem, 50.077vw + 11.451rem, 43.5rem);
     --background-color-hover: #FFFFFF;
     --heart-contour-color: #000000;
     --heart-fill: #FF0000;
@@ -26,27 +26,15 @@
     --background-color: #000000;
     --accent-color: #00CC14;
     --gradient: 
-        repeating-linear-gradient(to right, #000 2px, transparent 4px),
-        repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+        repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
         linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P-Regular';
     --card-font-weight: 485;
     --title-font-weight: 785;
-    --width: clamp(50%, (40rem - 100%) * 999, 696px);
+    --width: clamp(23.188rem, 50.077vw + 11.451rem, 43.5rem);
     --background-color-hover: #00CC14;
     --heart-contour-color: #00CC14;
     --heart-fill: #FF0000;
 }
-
-    .theme-dark .page{
-        font-family: var(--main-font-family), fantasy;
-        font-variation-settings: 'wght' 485;
-        background-color: var(--background-color);
-        color: var(--accent-color);
-        background-image: var(--gradient);
-    }   
-
-    .theme-dark .card-title {
-        font-variation-settings: 'wght' 785;
-    }
